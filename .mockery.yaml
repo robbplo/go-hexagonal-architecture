@@ -1,0 +1,22 @@
+with-expecter: true
+dir: "mocks"
+mockname: "Mock{{.InterfaceName}}"
+outpkg: "mocks"
+packages:
+  github.com/linkai/go-chatbot-api/domain/ports:
+    interfaces:
+      CompanyRepository:
+      CompanyUsageRepository:
+      UserRepository:
+      ChatbotRepository:
+      GrantRepository:
+      ConversationRepository:
+      IdentityAdmin:
+      SessionAuthenticator:
+      ObjectStorage:
+      TextExtractor:
+      TokenCounter:
+      AIChatClient:
+      Clock:
+      IDGenerator:
+      Logger:
